@@ -1,0 +1,48 @@
+<mat-toolbar fxLayout fxLayoutAlign="space-between center">
+    <h3>{{ title }}</h3>
+    <button mat-icon-button mat-dialog-close>
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-toolbar>
+<mat-dialog-content>
+    <form fxLayout="column" fxLayoutAlign="center center" [formGroup]="group" class="formulario">
+        <mat-form-field appearance="outline">
+            <mat-label>Fecha</mat-label>
+            <input type="date" matInput formControlName="fecha">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Hora</mat-label>
+            <input type="time" matInput formControlName="hora">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre Paciente</mat-label>
+            <input type="text" matInput formControlName="paciente">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Motivo</mat-label>
+            <input type="text" matInput formControlName="motivo">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Médico</mat-label>
+            <input type="text" matInput formControlName="medico">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Especialidad</mat-label>
+            <input type="text" matInput formControlName="especialidad">
+        </mat-form-field>
+
+        <div fxLayout fxLayoutAlign="end" fxLayoutGap="10px">
+            <button mat-raised-button color="primary" type="button" [disabled]="group.invalid" (click)="save()">
+                Grabar
+            </button>
+            <button mat-button color="primary" type="button" mat-dialog-close="">
+                Cancelar
+            </button>
+        </div>
+    </form>
+</mat-dialog-content>

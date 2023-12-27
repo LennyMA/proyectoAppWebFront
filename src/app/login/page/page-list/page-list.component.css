@@ -1,0 +1,45 @@
+h2 {
+    font-size: 30px;
+    line-height: 46px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+:host {
+    width: 80%;
+    display: block;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+.txtUser{
+    color: rgb(0, 0, 0);
+}
+
+.txtPsw{
+    color: rgb(0, 0, 0);
+}
+
+.login{
+    width: 300px;
+    height: auto;
+    background-color: rgb(160, 141, 197);
+    margin-top: 50px;
+    margin-left: 500px;
+    padding: 40px;
+}
+
+.button {
+    background-color: rgb(68,43,113); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}

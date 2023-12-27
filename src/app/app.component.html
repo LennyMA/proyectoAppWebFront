@@ -1,0 +1,15 @@
+<mat-sidenav-container autosize="true">
+    <mat-sidenav opened="true" mode="side">
+        <div class="opciones">
+            <h3 *ngIf="expanded">Opciones del Sistema</h3>
+        </div>
+        <div class="menu">
+            <!--$event captura el valor que ha emitido otro componente, en este caso app.component.ts (expanded = true)-->
+            <cem-menu (onToggleExpanded)="toggleExpanded($event)"></cem-menu>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <cem-header></cem-header>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

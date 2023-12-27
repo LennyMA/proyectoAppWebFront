@@ -1,0 +1,16 @@
+img{
+    width: 48px;
+    height: 48px;
+}
+
+mat-toolbar{
+    /*background-color: rgb(68,43,113) !important; cambiaras el color xd*/
+    background: linear-gradient(to bottom ,rgb(174, 142, 234) ,rgb(68,43,113));
+    height: 80px;
+}
+
+h2{
+    font-size: 25px;
+    color: white !important;
+    line-height: 80px;
+}

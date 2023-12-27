@@ -1,0 +1,30 @@
+mat-sidenav-content {
+    min-height: 100vh;
+}
+
+mat-sidenav {
+    max-width: 280px;
+    height: auto;
+    background-color: rgb(68, 43, 113);
+
+}
+
+.opciones {
+    padding: 0 24px;
+    color: white;
+    min-height: 64px;
+    border-right: 1px solid white;
+    background: linear-gradient(to left,rgb(68,43,113), rgb(174, 142, 234));
+}
+
+.opciones h3 {
+    padding: 0%;
+    margin: 0%;
+    line-height: 64px;
+}
+
+.menu {
+    /*background-color: rgb(68,43,113);*/
+    background: linear-gradient(to left, rgb(68,43,113), rgb(174, 142, 234));
+    border-right: 1px solid white;
+}

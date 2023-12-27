@@ -1,0 +1,21 @@
+<form fxLayout fxLayoutAlign="center center" class="login">
+    <div fxLayout="column" fxLayoutAlign="center center" class="user">
+        <img src="../../../../assets/icons/user.png" alt="usuario">
+        <h2>Iniciar Sesión</h2>
+        <mat-form-field appearance="outline">
+            <mat-label class="txtUser">Usuario</mat-label>
+            <input matInput type="text" placeholder="Ingrese el usuario" required>
+            <mat-icon matSuffix>person</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label class="txtPsw">Clave</mat-label>
+            <input matInput type="{{hidePassword?'password':'text'}}" placeholder="Ingrese la clave" required>
+            <button mat-icon-button type="button" matSuffix (click)="hidePassword=!hidePassword">
+                <mat-icon>{{hidePassword?"lock":"lock_open"}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <form action="http://localhost:4200/info">
+            <button type="submit" value="Iniciar sesión" class="button">Iniciar Sesión</button>
+        </form>
+    </div>
+</form>
